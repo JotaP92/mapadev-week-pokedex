@@ -1,0 +1,115 @@
+.card-pokemon {
+    display:none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius:10px;
+}
+
+.card-pokemon .card-top {
+    padding:30px 40px 0;
+    border-radius:8px;
+}
+
+.card-pokemon .name {
+    margin-bottom:10px;
+}
+
+.card-pokemon .type {
+    font-size:12px;
+    background-color: #ffffff;
+    opacity:.7;
+    border-radius:10px;
+    padding:2px 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: ease-in-out .3s;
+}
+
+.card-pokemon .details {
+    color:#ffffff;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+.card-pokemon .details span {
+    transition: ease-in-out .3s;
+}
+
+.card-pokemon .card-image {
+    width:350px;
+    height:350px;
+}
+
+.card-pokemon img {
+    max-height:100%;
+    display:block;
+    transition: ease-in-out .3s;
+
+}
+.card-pokemon:hover img {
+    cursor:pointer;
+    transform:scale(1.2) translateY(60px);
+}
+
+.card-pokemon .card-info {
+    display:flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding:80px 30px 50px;
+    margin-top:-70px;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+    transition: ease-in-out .3s;
+}
+
+.card-pokemon .card-info h3 {
+    font-size:20px;
+    margin-bottom:15px;
+  
+}
+
+.card-pokemon .card-info .status, .card-pokemon .card-info .skills {
+    padding:0 10px;
+    width:180px;
+}
+
+.card-pokemon .card-info .skills ul > li, .card-pokemon .card-info .status ul > li {
+    padding:0 0 5px;
+    margin-bottom:5px;
+    font-size:16px;
+}  
+
+.card-pokemon.open {
+    display:block;
+}
+
+.fire-type {
+    background-image:linear-gradient(to bottom, #ED8A8B, #ffffff) ;
+} 
+.water-type {
+    background-image:linear-gradient(to bottom, #76BEFE, #ffffff);
+}
+.eletric-type {
+    background-image:linear-gradient(to bottom, #FCC710, #ffffff);
+}
+.grass-type {
+    background-image:linear-gradient(to bottom, #49d0b0, #ffffff);
+}
+.ghost-type {
+    background-image:linear-gradient(to bottom, #BA68CB, #ffffff);
+}
+.dragon-type {
+    background-image:linear-gradient(to bottom, #C29791, #ffffff);
+}
+
+.card-pokemon:hover .card-top .details span {
+    color:transparent;
+}
+.card-pokemon:hover .card-top .type {
+    color:transparent;
+    background-color: transparent;
+    box-shadow: none;
+}
+.card-pokemon:hover .card-info{
+    background-color:transparent;
+    color:transparent;
+}
